@@ -6,13 +6,14 @@
 		<meta name="viewport" content="width=device-width" />
 		
 		<link href="../_app/immutable/assets/0.a7817da9.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/11.49f30d75.css" rel="stylesheet">
 		<link rel="modulepreload" href="../_app/immutable/entry/start.07f74a3c.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.94a57ab9.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.d3f577fa.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/paths.41c090fa.js">
 		<link rel="modulepreload" href="../_app/immutable/entry/app.035476cc.js">
 		<link rel="modulepreload" href="../_app/immutable/nodes/0.6fb15e0e.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/6.1058eb34.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/11.03571cf5.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/SvelteMarkdown.4d357880.js"><!-- HEAD_svelte-3ybiie_START --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/css/uikit.min.css"><script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit.min.js"></script><script src="https://cdn.jsdelivr.net/npm/uikit@3.16.19/dist/js/uikit-icons.min.js"></script><!-- HEAD_svelte-3ybiie_END -->
 		<link rel="stylesheet" href="../customed.css">
 	</head>
@@ -167,7 +168,34 @@ c45 243 213 465 436 574 113 55 246 89 350 89 33 0 103 -9 155 -20 52 -11 96
         <div class="lower-nav-item svelte-1dpydlk">공진단</div></div>
 </div>
 
-<div class="uk-margin-top uk-padding-small"><h1 id="청구경희한의원">청구경희한의원</h1><p>추나요법으로 통증잡는 청구경희한의원</p></div>
+<div class="uk-margin-top uk-padding-small"><h1 id="bmi-계산기">BMI 계산기</h1><p>BMI를 직접 계산해볼까요?</p><p><a href="https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=5292">참고문헌</a></p>
+
+<form><fieldset class="uk-fieldset"><div class="uk-margin-small"><input type="number" placeholder="키를 입력하세요." class="uk-input"></div>
+        <div class="uk-margin-small"><input type="number" placeholder="몸무게를 입력하세요." class="uk-input"></div>
+        <button type="submit" class="uk-button uk-button-primary uk-width-1-1">결과보기</button></fieldset></form>
+
+<table class="uk-table uk-table-small uk-table-divider uk-table-hover uk-text-small"><thead><tr><th>분류</th>
+            <th>체질량지수(kg/m2)</th>
+            <th>결과</th></tr></thead>
+    <tbody><tr><td>저체중</td>
+            <td>18.5 미만</td>
+            <td id="under" class="result svelte-rscdlm"></td></tr>
+        <tr><td>정상</td>
+            <td>18.5 ~ 22.9</td>
+            <td id="normal" class="result svelte-rscdlm"></td></tr>
+        <tr><td>비만전단계</td>
+            <td>23 ~ 24.9</td>
+            <td id="over" class="result svelte-rscdlm"></td></tr>
+        <tr><td>1단계 비만</td>
+            <td>25 ~ 29.9</td>
+            <td id="over1" class="result svelte-rscdlm"></td></tr>
+        <tr><td>2단계 비만</td>
+            <td>30 ~ 34.9</td>
+            <td id="over2" class="result svelte-rscdlm"></td></tr>
+        <tr><td>3단계 비만</td>
+            <td>35 이상</td>
+            <td id="over3" class="result svelte-rscdlm"></td></tr></tbody>
+</table></div>
 
 
 			
@@ -188,7 +216,7 @@ c45 243 213 465 436 574 113 55 246 89 350 89 33 0 103 -9 155 -20 52 -11 96
 						import("../_app/immutable/entry/app.035476cc.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 6],
+							node_ids: [0, 11],
 							data,
 							form: null,
 							error: null
