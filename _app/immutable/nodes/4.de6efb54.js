@@ -1,0 +1,2 @@
+import{S as a,i as s,s as m,y as c,z as i,A as p,H as u,g as l,d as f,B as _}from"../chunks/index.c8bbf9d9.js";import{S as $}from"../chunks/SvelteMarkdown.3f99ae1e.js";const g=`# 비급여 항목 안내\r
+진단서 15,000원`;function d(o){let t,n;return t=new $({props:{source:g}}),{c(){c(t.$$.fragment)},l(e){i(t.$$.fragment,e)},m(e,r){p(t,e,r),n=!0},p:u,i(e){n||(l(t.$$.fragment,e),n=!0)},o(e){f(t.$$.fragment,e),n=!1},d(e){_(t,e)}}}class w extends a{constructor(t){super(),s(this,t,null,d,m,{})}}export{w as component};
